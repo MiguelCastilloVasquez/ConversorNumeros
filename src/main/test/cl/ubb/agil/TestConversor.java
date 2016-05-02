@@ -43,5 +43,12 @@ public class TestConversor {
 		
 		assertThat(numero,equalTo("VIII"));
 	}
+	@Test
+	public void convertirDoceArabigoEnRomano(){
+		
+		String numero=conversor.convertirARomano(12);
+		
+		assertThat(numero,equalTo("XII"));
+	}
 	
 }
