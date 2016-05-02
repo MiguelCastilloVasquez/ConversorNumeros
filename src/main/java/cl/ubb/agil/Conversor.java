@@ -7,6 +7,10 @@ public class Conversor {
 	}
 	
 	public String convertirARomano(int n){
-		return "I";
+		if(n==1){
+			return "I";
+		}else{
+			return "II";
+		}
 	}
 }
