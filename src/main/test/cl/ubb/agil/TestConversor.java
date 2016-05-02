@@ -14,4 +14,13 @@ public class TestConversor {
 		assertThat(numero,equalTo("I"));
 	}
 	
+	@Test
+	public void convertirDosArabigoEnRomano(){
+		Conversor conversor = new Conversor();
+		
+		String numero=conversor.convertirARomano(2);
+		
+		assertThat(numero,equalTo("II"));
+	}
+	
 }
