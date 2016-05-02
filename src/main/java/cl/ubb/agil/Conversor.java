@@ -6,13 +6,19 @@ public class Conversor {
 		
 	}
 	
-	public String convertirARomano(int n){
-		if(n==1){
-			return "I";
-		}else if(n==2){
-			return "II";
-		}else{
-			return "V";
+	public String convertirARomano(int numero){
+		String nroRomano="";
+		if(numero==0){
+			return nroRomano;
 		}
+		if(numero<5){
+			nroRomano=nroRomano+"I";
+			numero--;
+			return nroRomano+convertirARomano(numero);
+		}else{
+			nroRomano=nroRomano+"V";
+			numero=numero%5;
+			return nroRomano+convertirARomano(numero);
+		}	
 	}
 }
