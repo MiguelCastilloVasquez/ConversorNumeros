@@ -36,5 +36,12 @@ public class TestConversor {
 		assertThat(numero,equalTo("V"));
 		
 	}
+	@Test
+	public void convertirOchoArabigoEnRomano(){
+		
+		String numero=conversor.convertirARomano(8);
+		
+		assertThat(numero,equalTo("VIII"));
+	}
 	
 }
