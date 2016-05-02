@@ -9,8 +9,10 @@ public class Conversor {
 	public String convertirARomano(int n){
 		if(n==1){
 			return "I";
-		}else{
+		}else if(n==2){
 			return "II";
+		}else{
+			return "V";
 		}
 	}
 }
