@@ -43,7 +43,7 @@ public class TestConversor {
 		
 		assertThat(numero,equalTo("VIII"));
 	}
-	/*
+	
 	@Test
 	public void convertirDoceArabigoEnRomano(){
 		
@@ -51,5 +51,5 @@ public class TestConversor {
 		
 		assertThat(numero,equalTo("XII"));
 	}
-	*/
+	
 }
